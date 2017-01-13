@@ -37,8 +37,6 @@ Including an example of how to use your role (for instance, with variables passe
             UWSGI_INI_SRC_NAME: 'extras/troposphere.uwsgi.ini',
             NGINX_SSL_KEY_PATH: "{{ SSL_KEY }}",
             NGINX_COMBINED_CERT_PATH: "{{ COMBINED_CERT }}",
-            NGINX_SSL_KEY_DEST: "{{ TROPO.nginx.KEY_PATH }}",
-            NGINX_COMBINED_CERT_DEST: "{{ TROPO.nginx.COMBINED_CERT_PATH }}",
             tags: ['troposphere'] }
 ```
 
@@ -53,8 +51,6 @@ or
             UWSGI_INI_SRC_NAME: 'extras/uwsgi/atmo.uwsgi.ini',
             NGINX_SSL_KEY_PATH: "{{ SSL_KEY }}",
             NGINX_COMBINED_CERT_PATH: "{{ COMBINED_CERT }}",
-            NGINX_SSL_KEY_DEST: "{{ ATMO.nginx.KEY_PATH }}",
-            NGINX_COMBINED_CERT_DEST: "{{ ATMO.nginx.COMBINED_CERT_PATH }}",
             tags: ['atmosphere'] }
 ```
 
